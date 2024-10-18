@@ -17,7 +17,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #4CAF50;
+    color: #af844c;
 }
 
 .form-section {
@@ -60,7 +60,7 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #af844c;
     color: white;
     border: none;
     border-radius: 5px;
@@ -69,15 +69,15 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #af844c;
 }
 
 .result-section {
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid #4CAF50;
+    border: 1px solid #af844c;
     border-radius: 5px;
-    color: #4CAF50;
+    color: #af844c;
     font-weight: bold;
     text-align: center;
 }
