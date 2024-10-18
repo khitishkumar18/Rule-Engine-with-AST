@@ -4,11 +4,22 @@
 ## 🚀 Overview
 This is a simple **3-tier rule engine application** that determines user eligibility based on attributes like **age**, **department**, **income**, and **spend**. The system uses an **Abstract Syntax Tree (AST)** to represent conditional rules and allows for dynamic creation, combination, and modification of these rules.
 
+### 🖼️ **Main Project Overview Image**
+> *![Screenshot 2024-10-18 230850](https://github.com/user-attachments/assets/c1468c97-9d50-4411-a86e-ef54f65c1885)
+*
+
+---
+
 ## ✨ Features
 - **🛠️ Create Rule**: Allows users to create rules based on given attributes.
 - **🔗 Combine Rules**: Combines multiple rules into a single AST.
 - **✅ Evaluate Rule**: Evaluates the given data against the rule and returns whether the user is eligible.
 - **⚠️ Error Handling (Bonus)**: Handles invalid rule strings and data formats, providing meaningful error messages to the user.
+
+### 🖼️ **UI: Create Rule Feature**
+> *(Add an image here showcasing the UI for creating a rule. This could include a screenshot of the "Create Rule" form with an example rule.)*
+
+---
 
 ## 🏗️ Project Structure
 ```
@@ -37,6 +48,8 @@ requirements.txt     # Lists dependencies.
 main.py              # Entry point of the application.
 README.md            # This documentation file.
 ```
+
+---
 
 ## 💡 Design Choices
 - **🔄 3-tier Architecture**: Separates the UI, API, and backend logic for better maintainability and scalability.
@@ -93,6 +106,11 @@ README.md            # This documentation file.
 
    Input the above rule in the "Create Rule" text box and press the **Create Rule** button. It will prompt a success message and generate the relevant AST (autofilled).
 
+### 🖼️ **Rule Creation Success**
+> *(Add an image here showcasing the success message after creating a rule.)*
+
+---
+
 2. **Input a query to evaluate**:
    ```json
    {
@@ -104,6 +122,15 @@ README.md            # This documentation file.
    ```
 
    Input this JSON in "Data (JSON format):" and press **Evaluate**. It will return either **True** or **False** based on the rule.
+
+### 🖼️ **AST Representation Example**
+> *(Add an image here that displays the generated AST from the rule creation process.)*
+
+### 🖼️ **Input Query Example**
+> *(Add an image here showing an example input query in JSON format.)*
+
+### 🖼️ **Evaluation Result (True/False)**
+> *(Add an image here showing the result of a query evaluation — either True or False.)*
 
 ---
 
