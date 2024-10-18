@@ -5,8 +5,8 @@
 This is a simple **3-tier rule engine application** that determines user eligibility based on attributes like **age**, **department**, **income**, and **spend**. The system uses an **Abstract Syntax Tree (AST)** to represent conditional rules and allows for dynamic creation, combination, and modification of these rules.
 
 ### 🖼️ **Main Project Overview Image**
-> *![Screenshot 2024-10-18 230850](https://github.com/user-attachments/assets/c1468c97-9d50-4411-a86e-ef54f65c1885)
-*
+> ![Screenshot 2024-10-18 230850](https://github.com/user-attachments/assets/dda86de7-f5dd-48c5-81d9-9cc4e4084664)
+
 
 ---
 
