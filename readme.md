@@ -129,9 +129,6 @@ README.md            # This documentation file.
 > ![Screenshot 2024-10-18 231003](https://github.com/user-attachments/assets/cf03e254-eb13-442b-b78e-cc492e5d6c7e)
 
 
-### 🖼️ **Input Query Example**
-> *(Add an image here showing an example input query in JSON format.)*
-
 ### 🖼️ **Evaluation Result (True/False)**
 > ![Screenshot 2024-10-18 231019](https://github.com/user-attachments/assets/50b279da-ad35-4050-8819-a2227285fcb3)
 
