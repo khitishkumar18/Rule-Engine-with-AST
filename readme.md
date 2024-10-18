@@ -1,81 +1,118 @@
-# Rule Engine Application
 
-## Overview
-This is a simple 3-tier rule engine application that determines user eligibility based on attributes like age, department, income, and spend. The system uses an Abstract Syntax Tree (AST) to represent conditional rules and allows for dynamic creation, combination, and modification of these rules.
+# 🌟 **Rule Engine Application** 🌟
 
-## Features
-  - **Create Rule**: Allows users to create rules based on given attributes.
-  - **Combine Rules**: Combines multiple rules into a single AST.
-  - **Evaluate Rule**: Evaluates the given data against the rule and returns whether the user is eligible.
-  - **Error Handling (Bonus)**: Handles invalid rule strings and data formats and provides meaningful error messages to the user.
+## 🚀 Overview
+This is a simple **3-tier rule engine application** that determines user eligibility based on attributes like **age**, **department**, **income**, and **spend**. The system uses an **Abstract Syntax Tree (AST)** to represent conditional rules and allows for dynamic creation, combination, and modification of these rules.
 
+## ✨ Features
+- **🛠️ Create Rule**: Allows users to create rules based on given attributes.
+- **🔗 Combine Rules**: Combines multiple rules into a single AST.
+- **✅ Evaluate Rule**: Evaluates the given data against the rule and returns whether the user is eligible.
+- **⚠️ Error Handling (Bonus)**: Handles invalid rule strings and data formats, providing meaningful error messages to the user.
 
-## Project Structure
-- `app/`: Contains the main application code.
-  - `api.py`: Provides API functions to interact with the rule engine.
-  - `ast.py`: Defines the AST data structure.
-  - `database.py`: Handles database initialization and operations.
-  - `rules.py`: Implements rule creation, combination, and evaluation logic.
-  - `static/`: Contains static files (CSS, JavaScript).
-    - `css/`: 
-      - `style.css`: CSS styles.
-    - `js/`:
-      - `script.js`: JavaScript files.
-  - `templates/`:
-      - `index.html`: Main UI template.
-  
-- `tests/`: Contains unit tests.
-  - `test_rules.py`: Tests for rule creation, combination, and evaluation.
-  - `test_api.py`: Tests for the API functions.
-- `requirements.txt`: Lists the dependencies.
-- `main.py`: The entry point of the application.
-- `README.md`: This documentation file.
+## 🏗️ Project Structure
+```
+app/
+│
+├── api.py          # Provides API functions to interact with the rule engine.
+├── ast.py          # Defines the AST data structure.
+├── database.py     # Handles database initialization and operations.
+├── rules.py        # Implements rule creation, combination, and evaluation logic.
+│
+├── static/         # Contains static files (CSS, JavaScript).
+│   ├── css/
+│   │   └── style.css     # CSS styles.
+│   └── js/
+│       └── script.js     # JavaScript files.
+│
+└── templates/
+    └── index.html   # Main UI template.
+    
+tests/
+│
+├── test_rules.py    # Unit tests for rule creation, combination, and evaluation.
+└── test_api.py      # Unit tests for the API functions.
 
-## Design Choices
-- **3-tier Architecture**: The application is designed with a 3-tier architecture, separating the UI, API, and backend logic for better maintainability and scalability.
-- **Abstract Syntax Tree (AST)**: Used to represent conditional rules, allowing for dynamic creation, combination, and modification.
-- **Error Handling**: Comprehensive error handling for invalid rule strings and data formats to ensure robustness.
-- **UI Design**: The UI is designed to be clean and user-friendly, with dynamic feedback for rule evaluation results.
+requirements.txt     # Lists dependencies.
+main.py              # Entry point of the application.
+README.md            # This documentation file.
+```
 
-## Instructions
+## 💡 Design Choices
+- **🔄 3-tier Architecture**: Separates the UI, API, and backend logic for better maintainability and scalability.
+- **🌳 Abstract Syntax Tree (AST)**: Represents conditional rules, allowing for dynamic creation, combination, and modification.
+- **🛡️ Error Handling**: Comprehensive error handling ensures robustness for invalid rule strings and data formats.
+- **🎨 UI Design**: The UI is clean and user-friendly, providing dynamic feedback for rule evaluation results.
 
-  ### Prerequisites
-  - Python 3.6 or higher
-  - Flask
-  - SQLite (for database)
+---
 
+## ⚙️ Instructions
 
-  ### Build and Install
-  ###  Create a virtual environment 
-    python -m venv venv
-  ### Initialize the virtual environment 
-    venv/Scripts/activate
-  ### Install dependencies:
-      pip install -r requirements.txt
-  ### Initialize the database:
-      python -c "from app.database import initialize_database; initialize_database()"
-  ### Run the application:
-      python main.py
-  Open your web browser and go to `http://127.0.0.1:5000/`.
+### Prerequisites
+- 🐍 Python 3.6 or higher
+- 🧩 Flask
+- 🗃️ SQLite (for database)
 
-  ## Test
-  ### Sample tests to try on UI
-  ### Creating the rule
-    ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
+### 🏗️ Build and Install
+1. **Create a virtual environment**:
+   ```bash
+   python -m venv venv
+   ```
+   
+2. **Activate the virtual environment**:
+   ```bash
+   venv/Scripts/activate
+   ```
 
-  Input the above line in create rule text box and press the create rule button. It will prompt as the rule being created if successfull and generates the relevant AST (autofill).
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-  ### Input a query to evaluate:
-      {
-        "age": 50,
-        "department": "Sales",
-        "salary": 60000,
-        "experience": 10
-      }
+4. **Initialize the database**:
+   ```bash
+   python -c "from app.database import initialize_database; initialize_database()"
+   ```
 
-  Input this json in "Data (JSON format):" and press evaluate button which will hence generate the reult as True or False.
+5. **Run the application**:
+   ```bash
+   python main.py
+   ```
 
+   Open your web browser and go to `http://127.0.0.1:5000/`.
 
-## Predefined test cases:
-### Run the tests or directly browse it on the web browser with the help of sample examples given below:
-    python -m unittest discover tests
+---
+
+## 🧪 Test
+
+### 🛠️ Sample Tests to Try on UI
+1. **Creating the rule**:
+   ```bash
+   ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
+   ```
+
+   Input the above rule in the "Create Rule" text box and press the **Create Rule** button. It will prompt a success message and generate the relevant AST (autofilled).
+
+2. **Input a query to evaluate**:
+   ```json
+   {
+     "age": 50,
+     "department": "Sales",
+     "salary": 60000,
+     "experience": 10
+   }
+   ```
+
+   Input this JSON in "Data (JSON format):" and press **Evaluate**. It will return either **True** or **False** based on the rule.
+
+---
+
+## 🧩 Predefined Test Cases:
+To run the tests, or directly browse it on the web browser with the provided examples:
+
+```bash
+python -m unittest discover tests
+```
+
+---
+
