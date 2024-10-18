@@ -17,7 +17,8 @@ This is a simple **3-tier rule engine application** that determines user eligibi
 - **⚠️ Error Handling (Bonus)**: Handles invalid rule strings and data formats, providing meaningful error messages to the user.
 
 ### 🖼️ **UI: Create Rule Feature**
-> *(Add an image here showcasing the UI for creating a rule. This could include a screenshot of the "Create Rule" form with an example rule.)*
+> ![Screenshot 2024-10-18 230931](https://github.com/user-attachments/assets/5d2294fe-8239-4cdb-911f-87d145d2f8e2)
+
 
 ---
 
@@ -107,7 +108,8 @@ README.md            # This documentation file.
    Input the above rule in the "Create Rule" text box and press the **Create Rule** button. It will prompt a success message and generate the relevant AST (autofilled).
 
 ### 🖼️ **Rule Creation Success**
-> *(Add an image here showcasing the success message after creating a rule.)*
+> ![Screenshot 2024-10-18 230940](https://github.com/user-attachments/assets/38013754-21d2-419f-8ece-fcd65138ad49)
+
 
 ---
 
@@ -124,13 +126,17 @@ README.md            # This documentation file.
    Input this JSON in "Data (JSON format):" and press **Evaluate**. It will return either **True** or **False** based on the rule.
 
 ### 🖼️ **AST Representation Example**
-> *(Add an image here that displays the generated AST from the rule creation process.)*
+> ![Screenshot 2024-10-18 231003](https://github.com/user-attachments/assets/cf03e254-eb13-442b-b78e-cc492e5d6c7e)
+
 
 ### 🖼️ **Input Query Example**
 > *(Add an image here showing an example input query in JSON format.)*
 
 ### 🖼️ **Evaluation Result (True/False)**
-> *(Add an image here showing the result of a query evaluation — either True or False.)*
+> ![Screenshot 2024-10-18 231019](https://github.com/user-attachments/assets/50b279da-ad35-4050-8819-a2227285fcb3)
+
+>  ![Screenshot 2024-10-18 231032](https://github.com/user-attachments/assets/a78af6a0-5273-4c1e-a96c-a7feba02dfcd)
+
 
 ---
 
