@@ -73,7 +73,7 @@ This is a simple 3-tier rule engine application that determines user eligibility
         "experience": 10
       }
 
-  Input this json in "Data (JSON format):" and press evaluate button which will hence generate the reult as Trur or False.
+  Input this json in "Data (JSON format):" and press evaluate button which will hence generate the reult as True or False.
 
 
 ## Predefined test cases:
